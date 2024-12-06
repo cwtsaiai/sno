@@ -20,7 +20,7 @@ It contains an implementation of a set of Space Net Optimization (SNO) based alg
 
 
 ## 2. Directory tree
-- [src-tree](https://github.com/cwtsaiai/sno/src-tree.txt)
+- [src-tree](https://github.com/cwtsaiai/sno/blob/main/src-tree.txt)
 
 ## 3. Building and running the programs
 1. To clone the repository, type
