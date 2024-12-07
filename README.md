@@ -2,23 +2,23 @@
 
 **This repository holds the supplementary source code to the manuscript entitled "Space Net Optimization for Single Objective Bound Constrained Problems" submitted to a journal for consideration of publication.** 
 
-It contains a C++ implementation of a set of Space Net Optimization (SNO) based algorithms for solving single objective bound-constrained problems. You may refer to a preliminary version of the manuscript (an early draft) to find a brief introduction to the SNO in ArXiv (https://arxiv.org/abs/2306.00043). This repository consists of two programs: [SNO with particle swarm optimization (PSO)](https://github.com/cwtsaiai/sno/blob/SNO_PSO) and [SNO with differential evolution (DE)](https://github.com/cwtsaiai/sno/SNO_DE), the purpose of which is to make it easier for the audience to understand the basic idea of SNO. Then, based on the transition operators of PSO and DE, the transition operators of SNO are built to show the possibility of SNO. 
+It contains a C++ implementation of a set of Space Net Optimization (SNO) based algorithms for solving single objective bound-constrained problems. You may refer to a preliminary version of the manuscript (an early draft) to find a brief introduction to the SNO in ArXiv (https://arxiv.org/abs/2306.00043). This repository consists of two programs: [SNO with particle swarm optimization (PSO)](https://github.com/cwtsaiai/sno/tree/main/SNO_PSO) and [SNO with differential evolution (DE)](https://github.com/cwtsaiai/sno/tree/main/SNO_DE), the purpose of which is to make it easier for the audience to understand the basic idea of SNO. Then, based on the transition operators of PSO and DE, the transition operators of SNO are built to show the possibility of SNO. 
 ## 1. Organization of the programs
 
 - **SNO with PSO**
-    - [main_snopso.cpp](https://github.com/cwtsaiai/sno/blob/SNO_PSO/main_snopso.cpp): This is where the main function that calls SNO with PSO defined in sno-pso.h for solving single objective bound-constrained problems is defined.
-    - [Makefile](https://github.com/cwtsaiai/sno/blob/SNO_PSO/Makefile): for compiling and recompiling the program.
-    - [sno-pso.h](https://github.com/cwtsaiai/sno/blob/SNO_PSO/sno-pso.h): The main source code of SNO with PSO.
-    - [test_function.h](https://github.com/cwtsaiai/sno/blob/SNO_PSO/test_function.h): The test benchmarks of single objective bound-constrained problems.
+    - [main_snopso.cpp](https://github.com/cwtsaiai/sno/blob/main/SNO_PSO/main_snopso.cpp): This is where the main function that calls SNO with PSO defined in sno-pso.h for solving single objective bound-constrained problems is defined.
+    - [Makefile](https://github.com/cwtsaiai/sno/blob/main/SNO_PSO/Makefile): for compiling and recompiling the program.
+    - [sno-pso.h](https://github.com/cwtsaiai/sno/blob/main/SNO_PSO/sno-pso.h): The main source code of SNO with PSO.
+    - [test_function.h](https://github.com/cwtsaiai/sno/blob/main/SNO_PSO/test_function.h): The test benchmarks of single objective bound-constrained problems.
 
 - **SNO with DE**
-    - [main_snode.cpp](https://github.com/cwtsaiai/sno/blob/SNO_DE/main_snode.cpp): This is where the main function that calls SNO with DE defined in sno-de.h for solving single objective bound-constrained problems is defined.
-    - [Makefile](https://github.com/cwtsaiai/sno/blob/SNO_DE/Makefile): for compiling and recompiling the program.
-    - [sno-de.h](https://github.com/cwtsaiai/sno/blob/SNO_DE/sno-de.h): The main source code of SNO with DE.
-    - [test_function.h](https://github.com/cwtsaiai/sno/blob/SNO_DE/test_function.h): The test benchmarks of single objective bound-constrained problems.
+    - [main_snode.cpp](https://github.com/cwtsaiai/sno/blob/main/SNO_DE/main_snode.cpp): This is where the main function that calls SNO with DE defined in sno-de.h for solving single objective bound-constrained problems is defined.
+    - [Makefile](https://github.com/cwtsaiai/sno/blob/main/SNO_DE/Makefile): for compiling and recompiling the program.
+    - [sno-de.h](https://github.com/cwtsaiai/sno/blob/main/SNO_DE/sno-de.h): The main source code of SNO with DE.
+    - [test_function.h](https://github.com/cwtsaiai/sno/blob/main/SNO_DE/test_function.h): The test benchmarks of single objective bound-constrained problems.
 
 ## 2. Directory tree
-- [src-tree](https://github.com/cwtsaiai/sno/src-tree.txt)
+- [src-tree](https://github.com/cwtsaiai/sno/blob/main/src-tree.txt)
 
 ## 3. Building and running the programs
 
@@ -82,7 +82,7 @@ It contains a C++ implementation of a set of Space Net Optimization (SNO) based 
 
 ## 4. LICENSE
 
-   >**Copyright (c) 2022-2024 Chun-Wei Tsai and AILAB@NSYSU**  
-   >**All rights reserved.**  
+**Copyright (c) 2022-2024 Chun-Wei Tsai and AILAB@NSYSU**  
+**All rights reserved.**  
 
-   >**This work (the supplementary code in this repository) is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](http://creativecommons.org/licenses/by-nc-nd/4.0/).**
+**This work (the supplementary code in this repository) is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](http://creativecommons.org/licenses/by-nc-nd/4.0/).**
