@@ -28,7 +28,7 @@ It contains a C++ implementation of a set of Space Net Optimization (SNO) based 
     git clone https://github.com/cwtsaiai/sno.git
     ```
 
-2. To compile and/or recompile the program, change to the directory /src/SNO_PSO or /src/SNO_DE first and then type
+2. To compile and/or recompile the program, change to the directory sno/src/SNO_PSO or sno/src/SNO_DE first and then type
 
     ```
     make
