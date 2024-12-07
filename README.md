@@ -82,7 +82,7 @@ It contains a C++ implementation of a set of Space Net Optimization (SNO) based 
 
 ## 4. LICENSE
 
-    **Copyright (c) 2022-2024 Chun-Wei Tsai and AILAB@NSYSU**  
-    **All rights reserved.**  
+**Copyright (c) 2022-2024 Chun-Wei Tsai and AILAB@NSYSU**  
+**All rights reserved.**  
 
-    **This work (the supplementary code in this repository) is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](http://creativecommons.org/licenses/by-nc-nd/4.0/).**
+**This work (the supplementary code in this repository) is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](http://creativecommons.org/licenses/by-nc-nd/4.0/).**
