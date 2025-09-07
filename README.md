@@ -1,21 +1,25 @@
-## Supplementary Source Code to the Manuscript: Space Net Optimization for Single Objective Bound Constrained Problems.
+## Simple version of Space Net Optimization for Single Objective Bound Constrained Problems.
 
-**This repository holds the supplementary source code to the manuscript entitled "Space Net Optimization for Single Objective Bound Constrained Problems" submitted to a journal for consideration of publication.** 
+**This repository holds the supplementary source code to the manuscript entitled "Space Net Optimization for Single Objective Bound Constrained Problems" in the IEEE Transactions on Evolutionary Computation.** 
 
-It contains a C++ implementation of a set of Space Net Optimization (SNO) based algorithms for solving single objective bound-constrained problems. You may refer to a preliminary version of the manuscript (an early draft) to find a brief introduction to the SNO in ArXiv (https://arxiv.org/abs/2306.00043). This repository consists of two programs: [SNO with particle swarm optimization (PSO)](https://github.com/cwtsaiai/sno/tree/main/src/SNO_PSO) and [SNO with differential evolution (DE)](https://github.com/cwtsaiai/sno/tree/main/src/SNO_DE), the purpose of which is to make it easier for the audience to understand the basic idea of SNO. Then, based on the transition operators of PSO and DE, the transition operators of SNO are built to show the possibility of SNO. 
+It contains a C++ implementation of a set of Space Net Optimization (SNO) based algorithms for solving single objective bound-constrained problems. You may refer to a preliminary version of the manuscript (an early draft) to find a brief introduction to the SNO in ArXiv (https://arxiv.org/abs/2306.00043), as well as a full version on IEEE Transactions on Evolutionary Computation (TEVC) (https://ieeexplore.ieee.org/abstract/document/11126067).
+
+This repository consists of two programs: [SNO with differential evolution (DE)](https://github.com/cwtsaiai/sno/tree/main/src/SNO_DE) and [SNO with particle swarm optimization (PSO)](https://github.com/cwtsaiai/sno/tree/main/src/SNO_PSO), the purpose of which is to make it easier for the audience to understand the basic idea of SNO. In these implementations, we adapt the transition operators of DE and PSO with the space net to generate partial new candidate solutions during the convergence process compared with conventional PSO and DE, thereby demonstrating the impacts of with/without the space net. The detailed results and discussions can also be seen in Section III.B, Preliminary Tests of the manuscript of TEVC.
+
+The main contributors to these implementations are: Chun-Wei Tsai (who presents the basic idea of SNO, builds the first version at the very beginning, and participates in the tasks to optimize and reorganize the codes in the last stage), Yi-Cheng Yang (who built the early version),  Wei-Hong Wang (who fine-tunes the source code for the acceleration in the later stage), Kung-Ming Liu (who attempts to visualize the results in more than three dimensions in the later stage), and Ming-Chao Chiang (who reviews all the codes as well as optimizes and reorganizes them in the last stage).
 ## 1. Organization of the programs
-
-- **SNO with PSO**
-    - [main_snopso.cpp](https://github.com/cwtsaiai/sno/blob/main/src/SNO_PSO/main_snopso.cpp): This is where the main function that calls SNO with PSO defined in sno-pso.h for solving single objective bound-constrained problems is defined.
-    - [Makefile](https://github.com/cwtsaiai/sno/blob/main/src/SNO_PSO/Makefile): for compiling and recompiling the program.
-    - [sno-pso.h](https://github.com/cwtsaiai/sno/blob/main/src/SNO_PSO/sno-pso.h): The main source code of SNO with PSO.
-    - [test_function.h](https://github.com/cwtsaiai/sno/blob/main/src/SNO_PSO/test_function.h): The test benchmarks of single objective bound-constrained problems.
 
 - **SNO with DE**
     - [main_snode.cpp](https://github.com/cwtsaiai/sno/blob/main/src/SNO_DE/main_snode.cpp): This is where the main function that calls SNO with DE defined in sno-de.h for solving single objective bound-constrained problems is defined.
     - [Makefile](https://github.com/cwtsaiai/sno/blob/main/src/SNO_DE/Makefile): for compiling and recompiling the program.
     - [sno-de.h](https://github.com/cwtsaiai/sno/blob/main/src/SNO_DE/sno-de.h): The main source code of SNO with DE.
     - [test_function.h](https://github.com/cwtsaiai/sno/blob/main/src/SNO_DE/test_function.h): The test benchmarks of single objective bound-constrained problems.
+    
+- **SNO with PSO**
+    - [main_snopso.cpp](https://github.com/cwtsaiai/sno/blob/main/src/SNO_PSO/main_snopso.cpp): This is where the main function that calls SNO with PSO defined in sno-pso.h for solving single objective bound-constrained problems is defined.
+    - [Makefile](https://github.com/cwtsaiai/sno/blob/main/src/SNO_PSO/Makefile): for compiling and recompiling the program.
+    - [sno-pso.h](https://github.com/cwtsaiai/sno/blob/main/src/SNO_PSO/sno-pso.h): The main source code of SNO with PSO.
+    - [test_function.h](https://github.com/cwtsaiai/sno/blob/main/src/SNO_PSO/test_function.h): The test benchmarks of single objective bound-constrained problems. 
 
 ## 2. Directory tree
 - [src-tree](https://github.com/cwtsaiai/sno/blob/main/src-tree.txt)
@@ -37,7 +41,7 @@ It contains a C++ implementation of a set of Space Net Optimization (SNO) based 
 3. To run the program, say, SNO with PSO, type either
 
     ```
-    ./main_snopso
+    ./main_snode
     ```
 
     for the results using default parameters
@@ -45,13 +49,13 @@ It contains a C++ implementation of a set of Space Net Optimization (SNO) based 
     or
     
     ```
-    ./main_snopso [1] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12]
+    ./main_snode [1] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12]
     ```
     
     for the results using user-supplied parameters, such as 
 
     ```
-    ./main_snopso 1 1000 30 10 10 10 10 10 0.2 0.2 10 1
+    ./main_snode 1 1000 30 10 10 10 10 10 0.2 0.2 10 1
     ```
     
     The meanings of the parameters are shown below.
@@ -79,10 +83,13 @@ It contains a C++ implementation of a set of Space Net Optimization (SNO) based 
     [11] The maximum number of space net adjustments for each search history. 
 
     [12] Index of the test function, as specified in test_function.h.
+    
+## 4. Citation
+ [Chun-Wei Tsai](https://sites.google.com/site/cwtsai0807/chun-wei-tsai), [Yi-Cheng Yang](), [Tzu-Chieh Tang](), [Che-Wei Hsu](), ["Space Net Optimization for Single Objective Bound Constrained Problems"](https://www.doi.org/10.1109/TEVC.2025.3599438), <i>IEEE Transactions on Evolutionary Computation (TEVC)</i>, 2025, In Press.
 
-## 4. LICENSE
+## 5. LICENSE
 
-**Copyright (c) 2022-2024 Chun-Wei Tsai and AILAB@NSYSU**  
-**All rights reserved.**  
+**Copyright (c) 2022-2024 Chun-Wei Tsai and AILAB@NSYSU** 
+**All rights reserved.** 
 
 **This work (the supplementary code in this repository) is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](http://creativecommons.org/licenses/by-nc-nd/4.0/).**
