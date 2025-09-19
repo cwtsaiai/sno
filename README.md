@@ -91,11 +91,11 @@ The main contributors to these implementations are: Chun-Wei Tsai (who presents 
 Here, animations are given to show the isometric and top views of SNO in solving the benchmarks (namely, Ackley, Bent Cigar, Griewank, Rastrigin, and Rosenbrock), thus making it easy to see how the space net is adjusted to fit the landscape of the solution space during the convergence process. 
 
 <div align="left">
-<img src="https://github.com/cwtsaiai/sno/blob/main/gif/Ackley.gif" width="480" />
-<img src="https://github.com/cwtsaiai/sno/blob/main/gif/BentCigar.gif" width="480"/><br>
-<img src="https://github.com/cwtsaiai/sno/blob/main/gif/Griewank.gif" width="480" />
-<img src="https://github.com/cwtsaiai/sno/blob/main/gif/Rastrigin.gif" width="480" /><br>
-<img src="https://github.com/cwtsaiai/sno/blob/main/gif/Rosenbrock.gif" width="480" />
+<img src="https://github.com/cwtsaiai/sno/blob/main/gif/Ackley.gif" width="400" />
+<img src="https://github.com/cwtsaiai/sno/blob/main/gif/BentCigar.gif" width="400"/><br>
+<img src="https://github.com/cwtsaiai/sno/blob/main/gif/Griewank.gif" width="400" />
+<img src="https://github.com/cwtsaiai/sno/blob/main/gif/Rastrigin.gif" width="400" /><br>
+<img src="https://github.com/cwtsaiai/sno/blob/main/gif/Rosenbrock.gif" width="400" />
 </div>
 ## 5. Citation
 
