@@ -34,13 +34,13 @@ The main contributors to these implementations are: Chun-Wei Tsai (who presents 
     git clone https://github.com/cwtsaiai/sno.git
     ```
 
-2. To compile and/or recompile the program, change to the directory sno/src/SNO_PSO or sno/src/SNO_DE first and then type
+2. To compile and/or recompile the program, change to the directory sno/src/SNO_DE or sno/src/SNO_PSO first and then type
 
     ```
     make
     ```
 
-3. To run the program, say, SNO with PSO, type either
+3. To run the program, say, SNO with DE, type either
 
     ```
     ./main_snode
@@ -104,7 +104,7 @@ Here, animations are given to show the isometric and top views of SNO in solving
 
 ## 6. LICENSE
 
-**Copyright (c) 2022-2024 Chun-Wei Tsai and AILAB@NSYSU** 
+**Copyright (c) 2022-2025 Chun-Wei Tsai and AILAB@NSYSU** 
 **All rights reserved.** 
 
 **This work (the supplementary code in this repository) is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](http://creativecommons.org/licenses/by-nc-nd/4.0/).**
