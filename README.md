@@ -97,6 +97,7 @@ Here, animations are given to show the isometric and top views of SNO in solving
 <img src="https://github.com/cwtsaiai/sno/blob/main/gif/Rastrigin.gif" width="400" /><br>
 <img src="https://github.com/cwtsaiai/sno/blob/main/gif/Rosenbrock.gif" width="400" />
 </div>
+
 ## 5. Citation
 
 [Chun-Wei Tsai](https://sites.google.com/site/cwtsai0807/chun-wei-tsai),[Yi-Cheng Yang](), [Tzu-Chieh Tang](), [Che-Wei Hsu](), ["Space Net Optimization for Single Objective Bound Constrained Problems"](https://www.doi.org/10.1109/TEVC.2025.3599438), <i>IEEE Transactions on Evolutionary Computation (TEVC)</i>, 2025, In Press.
