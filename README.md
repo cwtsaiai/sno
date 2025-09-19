@@ -109,6 +109,7 @@ Here, animations are given to show the isometric and top views of SNO in solving
   journal={IEEE Transactions on Evolutionary Computation},  
   year={2025, In Press}
 }
+```
 
 ## 6. LICENSE
 
