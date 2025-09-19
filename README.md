@@ -1,12 +1,13 @@
-## Simple version of Space Net Optimization for Single Objective Bound Constrained Problems.
+## A Simplified Version of Space Net Optimization for Single Objective Bound Constrained Problems.
 
-**This repository holds the supplementary source code to the manuscript entitled "Space Net Optimization for Single Objective Bound Constrained Problems" in the IEEE Transactions on Evolutionary Computation.** 
+**This repository holds the supplementary source code to the manuscript entitled "Space Net Optimization for Single Objective Bound Constrained Problems" published in the IEEE Transactions on Evolutionary Computation.** 
 
-It contains a C++ implementation of a set of Space Net Optimization (SNO) based algorithms for solving single objective bound-constrained problems. You may refer to a preliminary version of the manuscript (an early draft) to find a brief introduction to the SNO in ArXiv (https://arxiv.org/abs/2306.00043), as well as a full version on IEEE Transactions on Evolutionary Computation (TEVC) (https://ieeexplore.ieee.org/abstract/document/11126067).
+It contains a C++ implementation of a set of simplified version of Space Net Optimization (SNO) based algorithms for solving single objective bound-constrained problems. You may refer to a preliminary version of the manuscript (an early draft) to find a brief introduction to the SNO in ArXiv (https://arxiv.org/abs/2306.00043), as well as a full version in the IEEE Transactions on Evolutionary Computation (TEVC) (https://ieeexplore.ieee.org/abstract/document/11126067).
 
-This repository consists of two programs: [SNO with differential evolution (DE)](https://github.com/cwtsaiai/sno/tree/main/src/SNO_DE) and [SNO with particle swarm optimization (PSO)](https://github.com/cwtsaiai/sno/tree/main/src/SNO_PSO), the purpose of which is to make it easier for the audience to understand the basic idea of SNO. In these implementations, we adapt the transition operators of DE and PSO with the space net to generate partial new candidate solutions during the convergence process compared with conventional PSO and DE, thereby demonstrating the impacts of with/without the space net. The detailed results and discussions can also be seen in Section III.B, Preliminary Tests of the manuscript of TEVC.
+This repository consists of two programs: [SNO with differential evolution (DE)](https://github.com/cwtsaiai/sno/tree/main/src/SNO_DE) and [SNO with particle swarm optimization (PSO)](https://github.com/cwtsaiai/sno/tree/main/src/SNO_PSO), the purpose of which is to make it easier for the audience to understand the basic idea of SNO. In these implementations, we adapt the transition operators of DE (SNO-DE) and PSO (SNO-PSO) for the space net to generate portion of the new candidate solutions during the convergence process, thereby demonstrating the impact of the space net, when compared with conventional DE and PSO. The detailed results and discussions can also be seen in Section III.B, Preliminary Tests of the manuscript of TEVC. You may also find [Tables](https://github.com/cwtsaiai/sno/tree/main/notation.pdf) showing the mapping between notation in the paper and variables in the code as well as the mapping between SNO operators in the paper and Functions in the code. Note that the population for the results of the Preliminary Tests described in Table II is of size 120, but SNO-DE and SNO-PSO can also obtain good performance for the population of size 190, too.
 
-The main contributors to these implementations are: Chun-Wei Tsai (who presents the basic idea of SNO, builds the first version at the very beginning, and participates in the tasks to optimize and reorganize the codes in the last stage), Yi-Cheng Yang (who built the early version),  Wei-Hong Wang (who fine-tunes the source code for the acceleration in the later stage), Kung-Ming Liu (who attempts to visualize the results in more than three dimensions in the later stage), and Ming-Chao Chiang (who reviews all the codes as well as optimizes and reorganizes them in the last stage).
+The main contributors to these implementations are: Chun-Wei Tsai (who presents the basic idea of SNO, builds the very first version of the prototype to prove the concept, and participates in the tasks of optimizing and organizing the code in the last stage), Yi-Cheng Yang (who builds the early version of the code), Wei-Hong Wang (who fine-tunes the code to speed it up in the later stage), Kung-Ming Liu (who attempts to visualize the results in high-dimensional space in the later stage), Chun-Chih Chao (who participates in the tasks of verifying the code in the last stage), and Ming-Chao Chiang (who reviews, reorganizes, and optimizes all the code in the last stage).
+
 ## 1. Organization of the programs
 
 - **SNO with DE**
@@ -22,6 +23,7 @@ The main contributors to these implementations are: Chun-Wei Tsai (who presents 
     - [test_function.h](https://github.com/cwtsaiai/sno/blob/main/src/SNO_PSO/test_function.h): The test benchmarks of single objective bound-constrained problems. 
 
 ## 2. Directory tree
+
 - [src-tree](https://github.com/cwtsaiai/sno/blob/main/src-tree.txt)
 
 ## 3. Building and running the programs
@@ -83,11 +85,23 @@ The main contributors to these implementations are: Chun-Wei Tsai (who presents 
     [11] The maximum number of space net adjustments for each search history. 
 
     [12] Index of the test function, as specified in test_function.h.
-    
-## 4. Citation
- [Chun-Wei Tsai](https://sites.google.com/site/cwtsai0807/chun-wei-tsai), [Yi-Cheng Yang](), [Tzu-Chieh Tang](), [Che-Wei Hsu](), ["Space Net Optimization for Single Objective Bound Constrained Problems"](https://www.doi.org/10.1109/TEVC.2025.3599438), <i>IEEE Transactions on Evolutionary Computation (TEVC)</i>, 2025, In Press.
 
-## 5. LICENSE
+## 4. Visualization of SNO for Some Benchmarks
+
+Here, animations are given to show the isometric and top views of SNO in solving the benchmarks (namely, Ackley, Bent Cigar, Griewank, Rastrigin, and Rosenbrock), thus making it easy to see how the space net is adjusted to fit the landscape of the solution space during the convergence process. 
+
+<div align="left">
+<img src="https://github.com/cwtsaiai/sno/blob/main/gif/Ackley.gif" width="480" />
+<img src="https://github.com/cwtsaiai/sno/blob/main/gif/BentCigar.gif" width="480"/><br>
+<img src="https://github.com/cwtsaiai/sno/blob/main/gif/Griewank.gif" width="480" />
+<img src="https://github.com/cwtsaiai/sno/blob/main/gif/Rastrigin.gif" width="480" /><br>
+<img src="https://github.com/cwtsaiai/sno/blob/main/gif/Rosenbrock.gif" width="480" />
+</div>
+## 5. Citation
+
+[Chun-Wei Tsai](https://sites.google.com/site/cwtsai0807/chun-wei-tsai),[Yi-Cheng Yang](), [Tzu-Chieh Tang](), [Che-Wei Hsu](), ["Space Net Optimization for Single Objective Bound Constrained Problems"](https://www.doi.org/10.1109/TEVC.2025.3599438), <i>IEEE Transactions on Evolutionary Computation (TEVC)</i>, 2025, In Press.
+
+## 6. LICENSE
 
 **Copyright (c) 2022-2024 Chun-Wei Tsai and AILAB@NSYSU** 
 **All rights reserved.** 
