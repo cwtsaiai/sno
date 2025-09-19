@@ -102,6 +102,14 @@ Here, animations are given to show the isometric and top views of SNO in solving
 
 [Chun-Wei Tsai](https://sites.google.com/site/cwtsai0807/chun-wei-tsai),[Yi-Cheng Yang](), [Tzu-Chieh Tang](), [Che-Wei Hsu](), ["Space Net Optimization for Single Objective Bound Constrained Problems"](https://www.doi.org/10.1109/TEVC.2025.3599438), <i>IEEE Transactions on Evolutionary Computation (TEVC)</i>, 2025, In Press.
 
+```
+@ARTICLE{Tsai-2025,
+  author={Chun-Wei Tsai, Yi-Cheng Yang, Tzu-Chieh Tang, and Che-Wei Hsu},
+  title={Space Net Optimization for Single Objective Bound Constrained Problems},
+  journal={IEEE Transactions on Evolutionary Computation},  
+  year={2025, In Press}
+}
+
 ## 6. LICENSE
 
 **Copyright (c) 2022-2025 Chun-Wei Tsai and AILAB@NSYSU** 
