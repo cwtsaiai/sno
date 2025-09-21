@@ -1,6 +1,6 @@
 ## A Simplified Version of Space Net Optimization for Single Objective Bound Constrained Problems
 
-**This repository holds the supplementary source code to the manuscript entitled "Space Net Optimization for Single Objective Bound Constrained Problems" published in the IEEE Transactions on Evolutionary Computation.** 
+**This repository holds the supplementary source code to the paper entitled "Space Net Optimization for Single Objective Bound Constrained Problems" published in the IEEE Transactions on Evolutionary Computation.** 
 
 It contains a C++ implementation of a set of simplified version of Space Net Optimization (SNO) based algorithms for solving single objective bound-constrained problems. You may refer to a preliminary version of the manuscript (an early draft) to find a brief introduction to the SNO in ArXiv (https://arxiv.org/abs/2306.00043), as well as a full version in the IEEE Transactions on Evolutionary Computation (TEVC) (https://ieeexplore.ieee.org/abstract/document/11126067).
 
