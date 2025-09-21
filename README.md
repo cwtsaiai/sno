@@ -1,4 +1,4 @@
-## A Simplified Version of Space Net Optimization for Single Objective Bound Constrained Problems.
+## A Simplified Version of Space Net Optimization for Single Objective Bound Constrained Problems
 
 **This repository holds the supplementary source code to the manuscript entitled "Space Net Optimization for Single Objective Bound Constrained Problems" published in the IEEE Transactions on Evolutionary Computation.** 
 
