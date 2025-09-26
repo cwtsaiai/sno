@@ -111,8 +111,8 @@ private:
 // default constructor
 inline sno::sno()
     : runs(51),
-      MaxFES(100000),
-      d(10),
+      MaxFES(300000),
+      d(30),
       net_size(9),
       ns_init(190),
       ns_end(10),
